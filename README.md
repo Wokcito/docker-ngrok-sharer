@@ -22,9 +22,19 @@ You can use the command `/id` to get the current chat id. In the case you want t
 ### Docker Compose
 
 ```yml
+# docker-compose.yml
 version: '3.8'
 
 services:
+    ngrok:
+        image: ngrok/ngrok:alpine
+        container_name: ngrok
+        environment:
+            - NGROK_AUTHTOKEN
+        command: 'tcp 25565'
+        ports:
+            - 4040:4040
+
     ngrok-sharer:
         container_name: ngrok_sharer
         image: wokcito/ngrok-sharer
