@@ -1,5 +1,14 @@
 # Ngrok sharer
 
+<p>
+    <img src="https://img.shields.io/docker/pulls/wokcito/ngrok-sharer" />
+    <img src="https://img.shields.io/docker/stars/wokcito/ngrok-sharer" />
+    <img src="https://img.shields.io/docker/image-size/wokcito/ngrok-sharer" />
+    <a href="https://github.com/Wokcito/docker-ngrok-sharer" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/github/stars/wokcito/docker-ngrok-sharer" />
+    </a>
+</p>
+
 Uses the API key of Ngrok, obtains the public url from active [Ngrok's agent sessions](https://dashboard.ngrok.com/tunnels/agents) and sends it through Telegram
 
 > [!IMPORTANT]  
