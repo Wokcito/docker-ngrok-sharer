@@ -22,11 +22,19 @@ Uses the API key of Ngrok, obtains the public url from active [Ngrok's agent ses
 - `TELEGRAM_BOT_TOKEN` - Token given by [BotFather](https://t.me/botfather) after creating a new bot.
 - `TELEGRAM_CHAT_ID` - If a chat id is given, the bot will send the public url as soon as it launchs.
 
-### Getting the chat id
+### Commands
 
-You can use the command `/id` to get the current chat id. In the case you want the chat id from a group chat, add the bot as member and use `/id`
+#### `/id`
 
-![image](https://github.com/Wokcito/portfolio/assets/99556533/0cf94838-ed10-4996-9f4f-541b56dfcf83)
+You can use the command `/id` to get the current chat id. In the case you want the chat id from a group chat, add the bot as a member and use `/id`
+
+![image](https://github.com/Wokcito/docker-ngrok-sharer/assets/99556533/1cee074d-4ddc-49df-9c0f-759e21984b52)
+
+#### `/url`
+
+Whether you have set the variable `TELEGRAM_CHAT_ID` or not, you can use the command `/url` to retrieve the current public URL.
+
+![image](https://github.com/Wokcito/docker-ngrok-sharer/assets/99556533/5a0d7e6c-60e2-453f-bab0-725f45d5fa23)
 
 ### Docker Compose
 
