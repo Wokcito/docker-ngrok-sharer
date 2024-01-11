@@ -1,5 +1,5 @@
 import { NGROK_API_KEY } from '../config/config'
-import { type Agent } from '../interfaces/tunnels'
+import { type Agent } from '../interfaces/agent'
 
 export async function getPublicURL(): Promise<string> {
 	const response = await fetch('https://api.ngrok.com/tunnels', {
