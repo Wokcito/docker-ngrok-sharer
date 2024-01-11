@@ -27,7 +27,7 @@ version: '3.8'
 services:
     ngrok-sharer:
         container_name: ngrok_sharer
-        image: wok/ngrok-sharer
+        image: wokcito/ngrok-sharer
         restart: unless-stopped
         environment:
             - NGROK_API_KEY
